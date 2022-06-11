@@ -22,4 +22,11 @@ public class FibonacciJUnitTest {
         long resultado = fibonacci.fibonacci(1);
         assertEquals(0, resultado);
     }
+    
+    @Test
+    public void testFibonacci2(){
+        long esperado = 1L;
+        long resultado = fibonacci.fibonacci(2);
+        assertEquals(1, resultado);
+    }
 }
