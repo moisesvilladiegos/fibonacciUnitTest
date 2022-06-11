@@ -17,8 +17,12 @@ public class Fibonacci {
     public static void main(String[] args) {
     }
     
-    
     public long fibonacci(long numero) {
-        return 0;
+        if(numero == 1) {
+            return 0;
+        } else if (numero == 2) {
+            return 1;
+        }
+        return fibonacci(numero - 1) + fibonacci(numero - 2);
     }
 }
